@@ -117,3 +117,8 @@ It's possible to configure the build on a GitHub PR by labelling the PR with the
 [apm-beats-update]: https://beats-ci.elastic.co/job/Beats/job/apm-beats-update/
 [apm-beats-packaging]: https://beats-ci.elastic.co/job/Beats/job/packaging/
 [apm-beats-tester]: https://beats-ci.elastic.co/job/Beats/job/beats-tester/
+
+
+## linux编译
+
+CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -ldflags "-X github.com/elastic/beats/libbeat/version.buildTime=2021-10-11T02:30:47Z -X github.com/elastic/beats/libbeat/version.commit=f5068889e382e8eaac81e7d2f93dfb6de9fcbc6f"
